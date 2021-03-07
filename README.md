@@ -16,3 +16,4 @@ git clone https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner.git
 cd pluto-jl-jupyter-conversion-cleaner
 python convert.py --fname <your converted .ipynb file>
 ```
+> Note: The converted file is saved as file-name-converted.ipynb
