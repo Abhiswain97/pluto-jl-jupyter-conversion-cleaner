@@ -5,7 +5,7 @@ Thanks to [fonsp](https://github.com/fonsp) for [pluto-jl-jupyter-conversion](ht
 This repository contains code to clean the Jupyter notebooks converted from Pluto.jl using: 
 [pluto-jl-jupyter-conversion](https://observablehq.com/@olivier_plas/pluto-jl-jupyter-conversion) 
 
-The original conversion from pluto to jupyter makes even the the markdown cells as code cells.
+The original conversion from pluto to jupyter makes even the the markdown cells as code cells. This utility can be used to clean them.
 
 ## Steps
 
