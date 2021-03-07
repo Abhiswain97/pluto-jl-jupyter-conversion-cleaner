@@ -20,4 +20,4 @@ python convert.py --fname <your converted .ipynb file>
 
 ## Examples
 
-Checkout [exmaples](https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner/tree/main/examples) for the demo.
+Checkout [examples](https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner/tree/main/examples) for the demo.
