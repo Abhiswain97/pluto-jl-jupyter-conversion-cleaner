@@ -6,7 +6,7 @@ import sys
 
 def clean(fname):
 
-    if fname.split(".")[1] != ".ipynb":
+    if fname.split(".")[1] != "ipynb":
         print(
             """
         Must be a .ipynb file.

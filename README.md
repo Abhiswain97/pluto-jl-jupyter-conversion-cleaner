@@ -18,7 +18,7 @@ cd pluto-jl-jupyter-conversion-cleaner
 python cleaner.py --fname <your converted .ipynb file>
 ```
 
-> Note: The converted file is saved as file-name-converted.ipynb
+> Note: The converted file is saved as file-name-cleaned.ipynb
 
 ## Examples
 
