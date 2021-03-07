@@ -4,7 +4,7 @@ import argparse
 import sys
 
 
-def convert(fname):
+def clean(fname):
 
     if fname.split(".")[1] != ".ipynb":
         print(
@@ -31,13 +31,13 @@ def convert(fname):
                 cell.pop("execution_count")
                 cell.pop("outputs")
 
-        with open(fname.split(".")[0] + "-converted.ipynb", mode="w") as output_file:
+        with open(fname.split(".")[0] + "-cleaned.ipynb", mode="w") as output_file:
             json.dump(source, output_file)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="convert Plutojl notebook to a Ipython notebook"
+        description="clean Ipython notebook markdown cells"
     )
 
     parser.add_argument(
@@ -46,4 +46,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    convert(fname=args.fname)
+    clean(fname=args.fname)
