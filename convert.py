@@ -1,26 +1,38 @@
 import json
 import codecs
 import argparse
+import sys
 
 
 def convert(fname):
-    f = codecs.open(fname, encoding="utf-8")
-    source = json.loads(f.read())
 
-    for cell in source["cells"]:
-        s = cell["source"]
-        if "md" in s[0]:
-            if len(s) == 1:
-                s[0] = s[0].replace("md", "").replace('"', "")
-            else:
-                s.pop(0)
-                s.pop()
-            cell["cell_type"] = "markdown"
-            cell.pop("execution_count")
-            cell.pop("outputs")
+    if fname.split(".")[1] != ".ipynb":
+        print(
+            """
+        Must be a .ipynb file.
+        Exiting.....
+        """
+        )
+        sys.exit(0)
 
-    with open(fname.split(".")[0] + "-converted.ipynb", mode="w") as output_file:
-        json.dump(source, output_file)
+    else:
+        f = codecs.open(fname, encoding="utf-8")
+        source = json.loads(f.read())
+
+        for cell in source["cells"]:
+            s = cell["source"]
+            if "md" in s[0]:
+                if len(s) == 1:
+                    s[0] = s[0].replace("md", "").replace('"', "")
+                else:
+                    s.pop(0)
+                    s.pop()
+                cell["cell_type"] = "markdown"
+                cell.pop("execution_count")
+                cell.pop("outputs")
+
+        with open(fname.split(".")[0] + "-converted.ipynb", mode="w") as output_file:
+            json.dump(source, output_file)
 
 
 if __name__ == "__main__":
