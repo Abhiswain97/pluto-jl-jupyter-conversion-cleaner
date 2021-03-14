@@ -1,5 +1,9 @@
 # pluto-jl-jupyter-conversion-cleaner
 
+*I also have written blogs to accompany this:* 
+- **medium version: [Pluto.jl + fastpages](https://abhi08as-as.medium.com/pluto-jl-fastpages-9d698c013b3a)**
+- **my blog: [Pluto.jl + fastpages](https://abhishekswain.me/blog%20post/fastai/fastpages/2021/03/14/pluto-to-Jupyter-cleaned.html)**
+
 Thanks to [fonsp](https://github.com/fonsp) for [pluto-jl-jupyter-conversion](https://observablehq.com/@olivier_plas/pluto-jl-jupyter-conversion)
 
 This repository contains code to clean the Jupyter notebooks converted from Pluto.jl using:
