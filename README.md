@@ -24,8 +24,12 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
    ```
    git clone https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner.git
    cd pluto-jl-jupyter-conversion-cleaner
-   python cleaner.py --fname <your converted .ipynb file>
+   python cleaner.py --path <your converted .ipynb file>
    ```
+
+## Help:
+
+    `python cleaner.py --help`
 
 > Note: The converted file is saved as file-name-cleaned.ipynb
 
