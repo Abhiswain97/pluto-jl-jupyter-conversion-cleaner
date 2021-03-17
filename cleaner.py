@@ -2,21 +2,17 @@ import json
 import codecs
 import argparse
 import sys
+from fire import Fire
 
 
-def clean(fname):
+def clean(path: str):
 
-    if fname.split(".")[1] != "ipynb":
-        print(
-            """
-        Must be a .ipynb file.
-        Exiting.....
-        """
-        )
-        sys.exit(0)
+    assert type(path) == str
 
+    if path.split(".")[1] != "ipynb":
+        raise Exception("Must be a .ipynb file")
     else:
-        f = codecs.open(fname, encoding="utf-8")
+        f = codecs.open(path, encoding="utf-8")
         source = json.loads(f.read())
 
         for cell in source["cells"]:
@@ -31,19 +27,10 @@ def clean(fname):
                 cell.pop("execution_count")
                 cell.pop("outputs")
 
-        with open(fname.split(".")[0] + "-cleaned.ipynb", mode="w") as output_file:
+        with open(path.split(".")[0] + "-cleaned.ipynb", mode="w") as output_file:
             json.dump(source, output_file)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="clean Ipython notebook markdown cells"
-    )
 
-    parser.add_argument(
-        "--fname", type=str, required=True, help="Name of the file to convert"
-    )
-
-    args = parser.parse_args()
-
-    clean(fname=args.fname)
+    Fire(clean)
