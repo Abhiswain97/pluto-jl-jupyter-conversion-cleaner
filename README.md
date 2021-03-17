@@ -1,5 +1,9 @@
 # pluto-jl-jupyter-conversion-cleaner
 
+<p align="center">
+  <img src="plutojl_fastpages.jpg" height="" width="400">
+</p>
+
 _I also have written blogs to accompany this:_
 
 - **medium version: [Pluto.jl + fastpages](https://abhi08as-as.medium.com/pluto-jl-fastpages-9d698c013b3a)**
@@ -29,7 +33,7 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
 
 ## Help:
 
-    `python cleaner.py --help`
+    python cleaner.py --help
 
 > Note: The converted file is saved as file-name-cleaned.ipynb
 
