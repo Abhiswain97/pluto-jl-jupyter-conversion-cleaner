@@ -19,16 +19,21 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
 ## Steps
 
 1. Use [pluto-jl-jupyter-conversion](https://observablehq.com/@olivier_plas/pluto-jl-jupyter-conversion) to convert the Pluto.jl notebook to a Ipython notebook.
-2. Install all the requirements:
+
+2. Clone repo:
+   ```
+   git clone https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner.git
+   ```
+3. Install all the requirements:
 
    For windows: `run.bat` <br>
    For Linux: `sh run.sh`
-
-3. Clone repo and use it:
+   
+4. Use it:
+    
    ```
-   git clone https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner.git
    cd pluto-jl-jupyter-conversion-cleaner
-   python cleaner.py --path <your converted .ipynb file>
+   python run cleaner.py --path <your .ipynb file path>
    ```
 
 ## Help:
