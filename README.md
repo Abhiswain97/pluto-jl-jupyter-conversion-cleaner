@@ -23,6 +23,7 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
 2. Clone repo:
    ```
    git clone https://github.com/Abhiswain97/pluto-jl-jupyter-conversion-cleaner.git
+   cd pluto-jl-jupyter-conversion-cleaner
    ```
 3. Install all the requirements:
 
@@ -32,7 +33,7 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
 4. Use it:
     
    ```
-   cd pluto-jl-jupyter-conversion-cleaner
+   
    python run cleaner.py --path <your .ipynb file path>
    ```
 
