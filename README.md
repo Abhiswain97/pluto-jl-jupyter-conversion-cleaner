@@ -31,8 +31,7 @@ The original conversion from pluto to jupyter makes even the the markdown cells 
    For windows: `run.bat` <br>
    For Linux: `sh run.sh`
    
-4. Use it:
-5. 
+4. Use it:   
    `python run cleaner.py --path <your .ipynb file path>`
 
 ## Help:
